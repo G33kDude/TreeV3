@@ -30,7 +30,7 @@ Once that's removed, re-run apt-get to finish installing nginx.
 sudo apt-get install nginx
 ```
 
-After nginx has finished installing, ensure that it is running correctly by navigating to your/ev3dev's IP address in a web browser. You should see the default nginx web page. If you do not see the webpage, run
+After nginx has finished installing, ensure that it is running correctly by navigating to your/ev3dev's IP address in a web browser. You should see the [default nginx web page](http://i.imgur.com/ekpVUg1.png). If you do not see the webpage, run
 
 ```
 sudo service nginx start
