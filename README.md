@@ -3,6 +3,8 @@ TreeV3
 
 A web interface for turning on/off Christmas trees using the [Dexter Industries dSwitch](http://www.dexterindustries.com/site/?product=dswitch-lego-mindstorms-nxt) with [ev3dev](http://www.ev3dev.org/)
 
+Tree button modified from Free Design File's [Christmas tree flat vector icons](http://freedesignfile.com/125016-christmas-tree-flat-vector-icons/) under the CC Attribution 3.0 license.
+
 ---
 
 Installing TreeV3
