@@ -18,7 +18,7 @@ After ev3dev is set up, you have to install nginx and php:
 sudo apt-get install nginx
 ```
 
-On ev3dev, you'll run across an error while installing nginx. You'll have to open up `/etc/nginx/sites-available/default` and remove or comment out the line that looks like this:
+On ev3dev, you'll run across an error while installing nginx, because IPv6 is disabled in ev3dev. You'll have to open up `/etc/nginx/sites-available/default` and remove or comment out the line that looks like this:
 
 ```
 listen [::]:80 default
