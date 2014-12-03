@@ -106,7 +106,7 @@ Using TreeV3
 Before using TreeV3, ensure your dSwitch is connected to port A on the EV3. After you are sure it is connected, you'll need to put port A into `rcx-led` mode by running:
 
 ```
-sudo echo rcx-led > /sys/bus/legoev3/devices/outA/mode
+sudo bash -c 'echo rcx-led > /sys/bus/legoev3/devices/outA/mode'
 ```
 
 This will have to be done every time you restart your EV3.
