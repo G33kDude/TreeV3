@@ -5,6 +5,10 @@ A web interface for turning on/off Christmas trees using the [Dexter Industries 
 
 Tree button modified from Free Design File's [Christmas tree flat vector icons](http://freedesignfile.com/125016-christmas-tree-flat-vector-icons/) under the CC Attribution 3.0 license.
 
+[Youtube Video](https://www.youtube.com/watch?v=RPgkDut4-48)
+
+![Website image](http://www.ev3dev.org/images/projects/2014-11-30-TreeV3/TreeOn.png)
+
 ---
 
 Installing TreeV3
