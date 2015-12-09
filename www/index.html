@@ -1,10 +1,3 @@
-<?php
-$file = "/sys/class/leds/ev3::outA/brightness";
-if (isset($_REQUEST["on"]))
-	die(file_put_contents($file, "100"));
-elseif (isset($_REQUEST["off"]))
-	die(file_put_contents($file, "0"));
-?>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="reset.css" />
@@ -25,10 +18,10 @@ elseif (isset($_REQUEST["off"]))
 				$("#img").click(function() {
 					if ($("#img").attr("src") == "off.png") {
 						$("#img").attr("src", "on.png");
-						$.ajax("/?on")
+						$.post("on")
 					} else {
 						$("#img").attr("src", "off.png");
-						$.ajax("/?off")
+						$.post("off")
 					}
 				});
 			});
