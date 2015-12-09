@@ -5,9 +5,6 @@ import time
 import ev3dev.core
 ev3dev.core.LegoPort.SYSTEM_CLASS_NAME = 'lego-port'
 
-SERVER_PORT = 8080
-DSWITCH_PORT = 'outD'
-
 class DSwitch:
 	def __init__(self, port):
 		ev3dev.core.LegoPort(DSWITCH_PORT).mode = 'led'
