@@ -7,7 +7,7 @@ ev3dev.core.LegoPort.SYSTEM_CLASS_NAME = 'lego-port'
 
 class DSwitch:
 	def __init__(self, port):
-		ev3dev.core.LegoPort(DSWITCH_PORT).mode = 'led'
+		ev3dev.core.LegoPort(port).mode = 'led'
 		time.sleep(1)
 		self.led = ev3dev.core.Led(name=port+'::ev3dev')
 	def on(self):
@@ -31,7 +31,7 @@ def treev3(handler_class, dswitch_port, server_path='.', server_port=8080,
 	dswitch = DSwitch(dswitch_port)
 	os.chdir(server_path)
 	httpd = server_class(('', server_port), handler_class)
-	print("Running on port {}".format(SERVER_PORT))
+	print("Running on port {}".format(server_port))
 	httpd.serve_forever()
 
 if __name__ == '__main__':
